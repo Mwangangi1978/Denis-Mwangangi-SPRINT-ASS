@@ -11,20 +11,34 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/main.js" defer></script>
 </head>
 <body class="relative ">
-    <header class="sticky top-0">
-        <nav class="flex flex-row justify-between ">
+    <header class="sticky top-0 ">
+        <nav class="flex flex-row justify-between">
             <section>
                 <a href="#hero" class="pl-4 hover:opacity-60 focus:opacity-60 font-mono text-[1.5em]">MWANGANGI</a>
                 <a href="https://github.com/Mwangangi1978" class="fa fa-github ml-6 hover:scale-[1.2] focus:scale-[1.2]"></a>
             </section>
-            <section>
+            <section class="hidden md:block">
                 <a href="#about" class="pl-4 hover:opacity-60 focus:opacity-60">About</a>
                 <a href="#portfolio" class="pl-4 hover:opacity-60 focus:opacity-60">Portfolio</a>
                 <a href="#contact" class="bg-[#592E83] pl-4 pr-4 pb-2 pt-2 rounded-lg text-white hover hover:opacity-60 focus:opacity-60:first-letter ">Contact</a>
             </section>
+            <button id="hamburger-button" class="text-2xl md:hidden cursor-pointer">
+                &#9776;
+            </button>
         </nav>
+        <section id="mobile-menu" class="w-full  text-5xl flex-col justify-center  md:hidden origin-top animate-hamburger absolute top-0 hidden bg-black">
+            <button class="self-end text-white">&times;</button>
+            <nav id="mobile-menu"class="flex flex-col items-center p-7 min-h-screen ">
+                <ol class="text-white">
+                    <li><a href="#about" class="w-full text-center hover:scale[1.2] hover:opacity-60 ">About</a></li>
+                    <li><a href="#portfolio" class="w-full text-center hover:scale[1.2] hover:opacity-60">Portfolio</a></li>
+                    <li><a href="#contact" class="w-full text-center hover:scale[1.2] hover:opacity-60">Contact</a></li>
+                </ol>
+            </nav>
+        </section>
     </header>
     <main>
         <section id="hero" class="hero flex flex-col-reverse sm:flex-row justify-center ">

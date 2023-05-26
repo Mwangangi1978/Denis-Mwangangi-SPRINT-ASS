@@ -536,6 +536,10 @@ header {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -560,8 +564,16 @@ header {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-\[auto\] {
   height: auto;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-1\/2 {
@@ -580,6 +592,36 @@ header {
   width: 100%;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.origin-top {
+  transform-origin: top;
+}
+
+@keyframes hamburger {
+  0% {
+    transform: scaleY(0);
+  }
+
+  80% {
+    transform: scaleY(1.2);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-hamburger {
+  animation: hamburger 0.5s ease 0.5s forwards;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .scroll-mt-\[66px\] {
   scroll-margin-top: 66px;
 }
@@ -596,6 +638,10 @@ header {
   flex-direction: column-reverse;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -610,6 +656,10 @@ header {
 
 .gap-9 {
   gap: 2.25rem;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .overflow-auto {
@@ -665,6 +715,15 @@ header {
   background-color: rgb(153 132 212 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.p-7 {
+  padding: 1.75rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -703,6 +762,16 @@ header {
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-\[1\.5em\] {
@@ -842,5 +911,15 @@ a:any-link {
 
   .sm\:scroll-smooth {
     scroll-behavior: smooth;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 }
