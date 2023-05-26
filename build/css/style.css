@@ -424,6 +424,12 @@ video {
 
 body {
   background-color: #E5ECE9;
+  position: relative;
+}
+
+html, body {
+  max-width: 100% ;
+  overflow-x: hidden;
 }
 
 footer {
@@ -434,6 +440,7 @@ header {
   background-color: #E5ECE9;
   min-height: 50px;
   padding: 1rem;
+  position: sticky;
 }
 
 *, ::before, ::after {
@@ -544,10 +551,6 @@ header {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .top-0 {
   top: 0px;
 }
@@ -558,6 +561,10 @@ header {
 
 .ml-6 {
   margin-left: 1.5rem;
+}
+
+.mt-\[66px\] {
+  margin-top: 66px;
 }
 
 .flex {
@@ -574,14 +581,6 @@ header {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
 }
 
 .w-2\/3 {
@@ -652,6 +651,10 @@ header {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .gap-9 {
@@ -833,7 +836,7 @@ header {
 }
 
 .hero {
-  min-height: calc(100vh - 66px);
+  min-height: calc(100vh - 66px) ;
   scroll-margin-top: 66px;
 }
 
@@ -868,14 +871,6 @@ header {
   grid-area: ht;
 }
 
-a:-moz-any-link {
-  scale: 1.2;
-}
-
-a:any-link {
-  scale: 1.2;
-}
-
 .hover\:scale-\[1\.2\]:hover {
   --tw-scale-x: 1.2;
   --tw-scale-y: 1.2;
@@ -897,12 +892,20 @@ a:any-link {
 }
 
 @media (min-width: 640px) {
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+
   .sm\:w-1\/3 {
     width: 33.333333%;
   }
 
   .sm\:w-2\/3 {
     width: 66.666667%;
+  }
+
+  .sm\:w-\[66\%\] {
+    width: 66%;
   }
 
   .sm\:flex-row {

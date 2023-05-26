@@ -13,9 +13,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="js/main.js" defer></script>
 </head>
-<body class="relative ">
-    <header class="sticky top-0 ">
-        <nav class="flex flex-row justify-between">
+<body class="relative">
+    <header class="w-[100%] sticky top-0 ">
+        <nav class="flex flex-row  justify-between">
             <section>
                 <a href="#hero" class="pl-4 hover:opacity-60 focus:opacity-60 font-mono text-[1.5em]">MWANGANGI</a>
                 <a href="https://github.com/Mwangangi1978" class="fa fa-github ml-6 hover:scale-[1.2] focus:scale-[1.2]"></a>
@@ -31,7 +31,7 @@
         </nav>
         <section id="mobile-menu" class="w-full  text-5xl flex-col justify-center  md:hidden origin-top animate-hamburger absolute top-0 hidden bg-black">
             <button class="self-end text-white">&times;</button>
-            <nav id="mobile-menu"class="flex flex-col items-center p-7 min-h-screen ">
+            <nav id="mobile-menu"class="flex flex-col items-center p-7 min-h-screen w-[100%] ">
                 <ol class="text-white">
                     <li><a href="#about" class="w-full text-center hover:scale[1.2] hover:opacity-60 ">About</a></li>
                     <li><a href="#portfolio" class="w-full text-center hover:scale[1.2] hover:opacity-60">Portfolio</a></li>
@@ -41,8 +41,8 @@
         </section>
     </header>
     <main>
-        <section id="hero" class="hero flex flex-col-reverse sm:flex-row justify-center ">
-            <section class=" sm:w-1/3 w-2/3">
+        <section id="hero" class="hero flex flex-col-reverse sm:flex-row justify-center gap-8 mt-[66px]">
+            <section class=" sm:w-1/3 w-[100%]">
                 <p class=" text-[2rem] leading-[2em]">WEB DEVELOPER <br>
                 <span class=" text-[3em] showcase">Denis Kabuga</span></P>
                 <p class="border border-solid border-l-black">
@@ -57,21 +57,21 @@
 
 
         <section id="about" class="flex flex-col gap-4 sm:flex-row scroll-mt-[66px]">
-            <section class="w-1/3">
+            <section class="sm:w-1/3 w-[100%]">
                 <img src="img/pet2683by3469.jpg" alt="My pet" loading="lazy">
                 <img src="img/connor-coyne-OgqWLzWRSaI-unsplash.jpg" alt="My pet" loading="lazy">
             </section>
-            <section class="w-2/3">
+            <section class="sm:w-[66%] w-[100%]">
                 <section>
                     <h2 class="text-[3rem] font-bold text-center">About Me</h2>
                     <p>I am web-developer based in Nairobi, Kenya who thrives to get the best out of himself and others as well.</p>
                 </section>
                 <section class="flex flex-row">
-                    <section class=" border-r-2 border-solid border-black w-1/2">
+                    <section class=" border-r-2 border-solid border-black sm:w-1/2">
                         <h3 class="text-[1.5rem] font-medium">Background</h3>
                         <p>I was born on 26-01-2005 and raised by loving parents and grew up in the bustling sub-urbs of Nairobi.</p>
                     </section>
-                    <section class="w-1/2 ">
+                    <section class="sm:w-1/2 ">
                         <h3 class="text-[1.5rem] font-medium">Principles</h3>
                         <ul>
                             <li>Hardwork</li>
@@ -154,10 +154,10 @@
 
 
         <section id="contact" class="flex flex-col sm:flex-row gap-9">
-            <section class="w-1/2">
+            <section class="sm:w-1/2 w-[100%]">
                 <img src="img/contact5184by3456.jpg" alt="Let's Talk" title="Lets Talk" loading="lazy">
             </section>
-            <section class="w-1/2">
+            <section class="sm:w-1/2 w-[100%]">
                 <h2 class="text-[2.5rem] font-bold">LET'S TALK</h2>
                 <p> <strong> I would love to hear from you !!</strong></p> 
                 <hr>
@@ -188,8 +188,7 @@
             Central City <br>
             44-5000drive.    
         </address>
-        <p>mwangangi1978@gmail.com</p>
-        <p>copyright &copy;Mwangangi</p>
+        <p>Copyright &copy;Mwangangi</p>
     </footer>
 </body>
 </html>
