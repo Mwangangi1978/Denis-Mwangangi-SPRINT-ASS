@@ -10,7 +10,7 @@
     
     
     footer {
-        min-width: 100vw;
+        max-width: 100%;
     }
     header {
         background-color: #E5ECE9;
