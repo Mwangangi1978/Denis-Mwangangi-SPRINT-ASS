@@ -441,6 +441,14 @@ hr {
   height: 2px;
 }
 
+a:-moz-any-link {
+  scale: 1.2;
+}
+
+a:any-link {
+  scale: 1.2;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -553,12 +561,12 @@ hr {
   top: 0px;
 }
 
-.ml-6 {
-  margin-left: 1.5rem;
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
-.mr-6 {
-  margin-right: 1.5rem;
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .flex {
@@ -650,6 +658,11 @@ hr {
 .bg-\[\#592E83\] {
   --tw-bg-opacity: 1;
   background-color: rgb(89 46 131 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#9984D4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 132 212 / var(--tw-bg-opacity));
 }
 
 .pb-1 {
@@ -750,14 +763,17 @@ hr {
   min-height: calc(100vh - 66px);
 }
 
-.socials {
-  font-size: x-large;
+.code {
+  width: 100px;
+  height: auto;
 }
 
-.hover\:scale-50:hover {
-  --tw-scale-x: .5;
-  --tw-scale-y: .5;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
 
 .hover\:scale-\[1\.2\]:hover {
@@ -768,6 +784,12 @@ hr {
 
 .hover\:opacity-60:hover {
   opacity: 0.6;
+}
+
+.focus\:scale-\[1\.2\]:focus {
+  --tw-scale-x: 1.2;
+  --tw-scale-y: 1.2;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .focus\:opacity-60:focus {

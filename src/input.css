@@ -17,9 +17,10 @@
         min-height: 50px;
         padding: 1rem;
     }
-    hr {
-        color: black;
-        height: 2px;
+
+    }
+    a:any-link {
+        scale: 1.2;
     }
 
 }
@@ -35,9 +36,17 @@
     .hero {
         min-height: calc(100vh - 66px);
     }
-    .socials {
-        font-size: x-large;
+    .code {
+        width: 100px;
+        height: 100px;
+        
     }
-
+    .left {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+    
 
 }
