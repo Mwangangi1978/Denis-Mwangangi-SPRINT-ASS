@@ -35,6 +35,9 @@
     .hero {
         min-height: calc(100vh - 66px);
     }
+    .socials {
+        font-size: x-large;
+    }
 
 
 }

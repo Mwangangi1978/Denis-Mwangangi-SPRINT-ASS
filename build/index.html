@@ -44,8 +44,8 @@
 
         <section id="about" class="flex flex-col gap-4 sm:flex-row">
             <section class="w-1/3">
-                <img src="img/pet2683by3469.jpg" alt="My pet" w-[100%] h-[auto]>
-                <img src="img/connor-coyne-OgqWLzWRSaI-unsplash.jpg" alt="My pet" w-[100%] h-[auto]>
+                <img src="img/pet2683by3469.jpg" alt="My pet" w-[100%] h-[auto] loading="lazy">
+                <img src="img/connor-coyne-OgqWLzWRSaI-unsplash.jpg" alt="My pet" w-[100%] h-[auto] loading="lazy">
             </section>
             <section class="w-2/3">
                 <section>
@@ -100,7 +100,33 @@
 
         </section>
         <section id="portfolio"></section>
-        <section id="contact"></section>
+        <br>
+        <section id="contact" class="flex flex-col sm:flex-row gap-9">
+            <section class="w-1/2">
+                <img src="img/contact5184by3456.jpg" alt="Let's Talk" title="Lets Talk" loading="lazy">
+            </section>
+            <section >
+                <h2 class="text-[2.5rem] font-bold">LET'S TALK</h2>
+                <p> <strong> I would love to hear from you !!</strong></p> 
+                <hr>
+                <form action="post" method="post">
+                        <label for="name">Your Name:</label> <br>
+                        <input type="text" id="name" required> <br>
+                        <label for="email">E- mail</label> <br>
+                        <input type="text" id="email" required> <br>
+                        <label for="message"> Message</label> <br>
+                        <textarea name="message" id="message" cols="40" rows="5" placeholder="Your Message"></textarea> <br>
+                        <input type="submit" class="bg-[#592E83] pl-4 pr-4 pb-2 pt-2 rounded-lg text-white hover hover:opacity-60 focus:opacity-60:first-letter">
+                    </fieldset>
+                </form>
+                <p class="socials ">
+                    <span class="italic">Socials:</span>
+                    <a href="https://github.com/Mwangangi1978" class="fa fa-github ml-6 hover:scale-[1.2]"></a>                    
+                    <a href="https://github.com/Mwangangi1978" class="fa fa-instagram ml-6 hover:scale-[1.2]"></a>                    
+                    <a href="https://github.com/Mwangangi1978" class="fa fa-twitter ml-6 v hover:scale-[1.2]"></a>                    
+                </p>
+            </section>
+        </section>
 
     </main>
     <footer class="foot">
