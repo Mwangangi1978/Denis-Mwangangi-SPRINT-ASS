@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
 @layer base {
     
     body {
@@ -10,21 +10,24 @@
     
     
     footer {
-        position: relative;
         min-width: 100vw;
     }
     header {
         min-width: 100vh;
+        background-color: #E5ECE9;
         min-height: 50px;
         padding: 1rem;
+        top: 0;
+    }
+    hr {
+        color: black;
+        height: 2px;
     }
 }
 @layer utilities {
     .foot {
         padding-left: 10px;
         background-color: #9984D4;
-        position: absolute;
-        bottom: 0;
     }
     .showcase {
         font-family: 'Playfair Display', serif;

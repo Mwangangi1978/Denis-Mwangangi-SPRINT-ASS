@@ -427,14 +427,20 @@ body {
 }
 
 footer {
-  position: relative;
   min-width: 100vw;
 }
 
 header {
   min-width: 100vh;
+  background-color: #E5ECE9;
   min-height: 50px;
   padding: 1rem;
+  top: 0;
+}
+
+hr {
+  color: black;
+  height: 2px;
 }
 
 *, ::before, ::after {
@@ -545,8 +551,32 @@ header {
   height: auto;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-1\/3 {
+  width: 33.333333%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .w-\[100\%\] {
   width: 100%;
+}
+
+.min-w-full {
+  min-width: 100%;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-col-reverse {
@@ -573,8 +603,25 @@ header {
   border-width: 1px;
 }
 
+.border-r-2 {
+  border-right-width: 2px;
+}
+
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
+}
+
 .border-solid {
   border-style: solid;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-l-black {
@@ -627,12 +674,32 @@ header {
   font-size: 1.5em;
 }
 
+.text-\[1\.5rem\] {
+  font-size: 1.5rem;
+}
+
+.text-\[2\.5rem\] {
+  font-size: 2.5rem;
+}
+
 .text-\[2rem\] {
   font-size: 2rem;
 }
 
 .text-\[3em\] {
   font-size: 3em;
+}
+
+.text-\[3rem\] {
+  font-size: 3rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .leading-\[2em\] {
@@ -647,8 +714,6 @@ header {
 .foot {
   padding-left: 10px;
   background-color: #9984D4;
-  position: absolute;
-  bottom: 0;
 }
 
 .showcase {
