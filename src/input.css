@@ -13,16 +13,15 @@
         min-width: 100vw;
     }
     header {
-        min-width: 100vh;
         background-color: #E5ECE9;
         min-height: 50px;
         padding: 1rem;
-        top: 0;
     }
     hr {
         color: black;
         height: 2px;
     }
+
 }
 @layer utilities {
     .foot {
@@ -33,5 +32,8 @@
         font-family: 'Playfair Display', serif;
 
     } 
+    .hero {
+        min-height: 100vh;
+    }
 
 }

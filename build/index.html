@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="sm:scroll-smooth">
+<html lang="en" class="sm:scroll-smooth ">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,23 +12,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <header class="flex justify-between min-w-full">
-        <section>
-            <p class="font-mono text-[1.5em]">
-                DENIS K.  <a href="https://github.com/Mwangangi1978" class="fa fa-github"></a>
-            </p>
-        </section>
-        <section class="navbar">
-            <nav >
+<body class="relative ">
+    <header class="sticky top-0">
+        <nav class="flex flex-row justify-between ">
+            <section>
+                <a href="#hero" class="pl-4 hover:opacity-60 focus:opacity-60 font-mono text-[1.5em]">MWANGANGI</a>
+                <a href="https://github.com/Mwangangi1978" class="fa fa-github mr-6"></a>
+            </section>
+            <section>
                 <a href="#about" class="pl-4 hover:opacity-60 focus:opacity-60">About</a>
                 <a href="#portfolio" class="pl-4 hover:opacity-60 focus:opacity-60">Portfolio</a>
                 <a href="#contact" class="bg-[#592E83] pl-4 pr-4 pb-2 pt-2 rounded-lg text-white hover hover:opacity-60 focus:opacity-60:first-letter ">Contact</a>
-            </nav>
-        </section>
+            </section>
+        </nav>
     </header>
-    <main >
-        <section class="hero flex flex-col-reverse sm:flex-row justify-center">
+    <main>
+        <section id="hero" class="hero flex flex-col-reverse sm:flex-row justify-center ">
             <section class=" sm:w-1/3 w-2/3">
                 <p class=" text-[2rem] leading-[2em]">WEB DEVELOPER <br>
                 <span class=" text-[3em] showcase">Denis Kabuga</span></P>
